@@ -1,0 +1,198 @@
+/* Estilo general */
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #71a3ff;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0 0 #000000;
+    margin-bottom: 20px;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-button {
+    padding: 0.5rem 1rem;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 0 #000000;
+}
+
+.nav-button:hover {
+    background-color: #c00000;
+}
+
+/* Formulario de publicación */
+.add-post {
+    margin: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0 0 #000000;
+    border-radius: 3px;
+    width: 100%; /* Hace que el formulario ocupe el mismo ancho que los posts */
+}
+
+textarea {
+    flex: 1;
+    height: auto;
+    border: 2px solid #000000;
+    resize: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+}
+
+textarea:focus {
+    border-color: #008080;
+    outline: none;
+}
+
+.form img {
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+button {
+    background-color: #008080;
+    color: white;
+    border: 2px solid #000000;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0 0 #000000;
+}
+
+button:hover {
+    background-color: #00c0c0;
+}
+
+/* Publicaciones */
+main {
+    margin: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 1rem;
+    box-shadow: 2px 2px 0 0 #000000;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.post p {
+    margin: 0;
+    font-size: 14px;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Estilo de botones de la barra lateral */
+.nav-button {
+    border-radius: 3px;
+    background-color: #008080;
+    border: 2px solid #000;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.nav-button:hover {
+    background-color: #00c0c0;
+}
+
+/* Efectos retro */
+input[type="text"], textarea {
+    background-color: #f0f0f0;
+    border: 2px solid #808080;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #008080;
+    outline: none;
+}

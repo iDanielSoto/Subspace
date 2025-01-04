@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-profile">
+            <a href="profile.html">
+                <img id="userPhoto" src="./img/default-user.jpg" alt="User Photo">
+                <span id="userName">Usuario</span>
+            </a>
+        </div>
+        <div class="nav-actions">
+            <a href="profile.html" class="nav-link">Mi Perfil</a>
+            <button id="logoutButton" class="nav-button">Cerrar Sesión</button>
+        </div>
+    </nav>
+    
+    <header class="add-post">
+        <form class="form" id="postForm" action="javascript:void(0);">
+            <img id="postUserPhoto" src="./img/default-user.jpg" alt="User Photo">
+            <textarea id="postContent" class="content" name="content" placeholder="Comienza a escribir"></textarea>
+            <button type="submit">Subir</button>
+        </form>
+    </header>
+    
+    <main class="container" id="postContainer">
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
